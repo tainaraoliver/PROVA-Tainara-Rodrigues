@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Empréstimo</title>
+</head>
+<body>
+    <h2>Calculadora de Empréstimo</h2>
+    <form id="loanForm">
+        <label for="loanAmount">Concursado:</label>
+        <input type="number" id="loanAmount" required><br><br>
+        
+        <label for="interestRate">Carteira assinada:</label>
+        <input type="number" id="interestRate" step="0.01" required><br><br>
+        
+        <label for="loanTerm">Contrato temporario:</label>
+        <input type="number" id="loanTerm" required><br><br>
+
+        
+        <button type="button" onclick="calculateLoan()">Calcular</button>
+    </form>
+
+    <div id="result"></div>
+    <script src="../script.js"></script>
+
+</body>
+</html>
+
